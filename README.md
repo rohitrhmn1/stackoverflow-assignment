@@ -18,4 +18,4 @@ Used Django, Django-REST Framework and React JS to complete the task.
 3. For caching used Djano Redis Cache.
 4. Added search limit of 5/min and 100/day.
 
-### URL: https://git.heroku.com/stackoverflow-assignment.git
+### URL: https://stackoverflow-assignment.herokuapp.com/
