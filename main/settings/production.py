@@ -1,3 +1,4 @@
+import django_heroku
 from .base import *
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -25,3 +26,5 @@ DATABASES = {
         'PORT': os.getenv('PROD_DB_PORT')
     }
 }
+
+django_heroku.settings(locals())
