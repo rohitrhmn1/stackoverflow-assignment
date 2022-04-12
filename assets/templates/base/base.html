@@ -1,0 +1,27 @@
+{% load i18n %}
+{% load static %}
+
+{% get_current_language_bidi as LANGUAGE_BIDI %}
+{% get_current_language as LANGUAGE_CODE %}
+<!DOCTYPE html>
+<html lang='{{ LANGUAGE_CODE|default:"en-us" }}' dir="{{ LANGUAGE_BIDI|yesno:'rtl,ltr,auto' }}">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'icons/favicon.ico' %}"/>
+    {% include 'base/css/base.html' %}
+    <title>
+      Stack Overflow Bank
+    </title>
+  </head>
+
+  <body>
+
+    {% block content %}{% endblock content %}
+
+    {% include 'base/js/base.html' %}
+
+  </body>
+
+</html>
