@@ -3,3 +3,4 @@ node_modules
 /venv
 /.idea
 /storage
+__pycache__
